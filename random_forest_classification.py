@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 23 11:55:27 2019
-
-@author: juangabriel
-"""
-
 # Random Forest Classification
 
 # Cómo importar las librerías
@@ -34,7 +26,7 @@ X_test = sc_X.transform(X_test)
 
 # Ajustar el clasificador  Random Forest en el Conjunto de Entrenamiento
 from sklearn.ensemble import RandomForestClassifier
-classifier = RandomForestClassifier(n_estimators = 10, criterion = "entropy", random_state = 0)     # Ponemos la cantidad de arboles que queremos, la entropia mide el caos de las datos
+classifier = RandomForestClassifier(n_estimators = 10, criterion = "entropy", random_state = 0)    
 classifier.fit(X_train, y_train)
 
 # Predicción de los resultados con el Conjunto de Testing
